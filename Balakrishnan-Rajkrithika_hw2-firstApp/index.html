@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>Rajkrithika Balakrishnan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('assets/img/krithika.PNG');
+  min-height: 100%; 
+}
+
+
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:30%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#home" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#project" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Project</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Rajkrithika Balakrishnan</b></h1>
+    <p style="color:blueviolet;"> Master's student and Performance engineer</p>
+    <img src="assets/img/krithika.PNG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="assets/img/krithika1.PNG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="./assets/krithika_resume.docx" download="krithika_resume.docx">
+      <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </a>
+  </header>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-red w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>A Graduate Student at UMass Lowell majoring in CS. I always believe the application of knowledge in the professional world is more effective when it displays academic sure-footedness and evidence-based rigor. I enjoy solving the real-world problems and challenges, learning new technologies, and expediting on developing productive and scalable solutions. Being a women in Engineering, I look up to have a passionate career and the work I do to be a purposeful one for this society, for the people around me to get benefited and for the goodness of this humankind.
+
+
+    </p>
+    <h3 class="w3-padding-16">My skill</h3>
+    <p class="w3-wide">C,C++</p>
+    <div class="w3-light-blue">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">45%</div>
+    </div>
+    <p class="w3-wide">Javascript</p>
+    <div class="w3-light-blue">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">70%</div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-blue">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">65%</div>
+    </div><br>
+      </div>
+    </div> 
+    </div>
+  <!-- End About Section -->
+  </div>
+   
+    
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  
+  
+  </footer>
+  
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
