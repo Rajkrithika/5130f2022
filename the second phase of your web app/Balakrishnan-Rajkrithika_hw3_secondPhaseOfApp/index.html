@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Krithika's portfolio</title>
+  <link rel="stylesheet" href="./assets/style/mainStyle.css">
+  <link rel="stylesheet" href="./assets/style/hamburger.css">
+  <link rel="stylesheet" href="./assets/style/map.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+</head>
+
+<body>
+  <!-- material icons CDN in the head section, see the html settings 👆-->
+  <ul class="menu">
+    <li><a class="menuItem" href="#">Home</a></li>
+    <li><a class="menuItem" href="#">Profile</a></li>
+    <li><a class="menuItem" href="#about">About</a></li>
+    <li><a class="menuItem" href="#gallery">Gallery</a></li>
+    <li><a class="menuItem" href="#investment-portfolio" data-toggle="modal" data-target="#exampleModalCenter">Inverstment-Portfolio</a></li>
+    <li><a class="menuItem" href="#factAboutMe" data-toggle="modal" data-target="#factAboutMe">Fact</a></li>
+    <li><a class="menuItem" href="#contact">Contacts</a></li>
+  </ul>
+  <button class="hamburger">
+    <!-- material icons https://material.io/resources/icons/ -->
+    <i class="menuIcon material-icons">menu</i>
+    <i class="closeIcon material-icons">close</i>
+  </button>
+  <div class="flex-container">
+
+    <!-- <div class="flex-child">
+      <div class="left-side">
+        <img src="./assets/img/kiki-11.jpg" style="width:100%">
+      </div>
+
+    </div> -->
+
+    <div class="flex-child">
+      
+      <!-- Modal Inverstment Portfolio-->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Investment Portfolio</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <div class="w3-content w3-justify w3-text-black w3-padding-32" id="investment-portfolio">
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header Session-->
+      <div>
+        <header class="w3-container w3-center" style="padding:55px 16px">
+          <h1 class="w3-jumbo"><b>RajKrithika Balakrishnan</b></h1>
+          <h1> I'm a</h1>
+          <div class="typed-out">Graduate Student and Budding Developer </div>
+          <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+            <a href="./krithika_resume.docx" download>
+              <i class="fa fa-download"></i> Download Resume
+            </a>
+          </button>
+        </header>
+      </div>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-black" id="about">
+        <h2 class="w3-text-Black">About</h2>
+        <p>A Graduate Student at UMass Lowell majoring in CS. I always believe the application of knowledge in the professional world is more effective when it displays academic sure-footedness and evidence-based rigor. I enjoy solving the
+          real-world problems and challenges, learning new technologies, and expediting on developing productive and scalable solutions. Being a women in Engineering, I look up to have a passionate career and the work I do to be a purposeful one
+          for this society, for the people around me to get benefited and for the goodness of this humankind.
+        </p>
+
+        <h3 class="w3-padding-16">My Skills</h3>
+        <p class="w3-wide">C,C++</p>
+        <div class="w3-light-blue">
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+        </div>
+        <p class="w3-wide">JavaScript</p>
+        <div class="w3-light-blue">
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide">SQL</p>
+        <div class="w3-light-blue">
+          <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+        </div>
+      </div>
+
+      <!-- Gallery Session -->
+      <h2 style="text-align:center">Slideshow Gallery</h2>
+      <!-- Container for the image gallery -->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/img/kiki2.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/kiki4.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/kiki5.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--Fact about me-->
+      <div class="modal fade" id="factAboutMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Fact about me</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="card-header">
+                  Travel
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Paris</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Ice Land</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  Sports
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Kho Kho</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  SomeThing
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Contact Section -->
+      <div class="w3-padding-32 w3-content w3-text-violet" id="contact" style="margin-bottom:64px">
+        <h2>Contact Me</h2>
+        <hr class="w3-opacity">
+
+        <div class="w3-section">
+          <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Shrewsbury Massachusettes, US</p>
+          <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +15083611981</p>
+          <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail2krithika1@gmail.com</p>
+        </div>
+
+        <!-- Image of location/map -->
+        <h3>Google Maps Location</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <p>Lets get in touch. Send me a message:</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="What you do for living?" required name="what You do For Living?"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="your current location?" required name="Your Current Location?"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="your Birth place?" required name="Your birth place?"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+          <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+        <a href="https://www.facebook.com/public/Raj-Kirithik" target="_top" class="btn btn-default btn-lg">
+          <i class="fa fa-facebook fa-fw"></i>
+          <span class="network-name">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/krithika_balakrishnan/" target="_top" class="btn btn-default btn-lg">
+          <i class="fa fa-instagram fa-fw"></i>
+          <span class="network-name">Instagram</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rajkrithikabalakrishnan/" target="_top" class="btn btn-default btn-lg">
+          <i class="fa fa-linkedin fa-fw"></i>
+          <span class="network-name">Linkedin</span>
+        </a>
+        <a href="https://github.com/Rajkrithika" target="_top" class="btn btn-default btn-lg">
+          <i class="fa fa-github fa-fw"></i>
+          <span class="network-name">GitHub</span>
+        </a>
+        <!-- <a href="https://www.facebook.com/public/Raj-Kirithik" target="_top" class="btn btn-default btn-lg">
+          <i class="fa fa-facebook fa-fw"></i>
+          <span class="network-name">Facebook</span>
+        </a> -->
+
+        <!-- End footer -->
+      </footer>
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+
+<script type="text/javascript" src="./assets/js/script.js"></script>
+<script type="text/javascript" src="./assets/js/graph.js"></script>
+<script type="text/javascript" src="./assets/js/hamburger.js"></script>
+<script type="text/javascript" src="./assets/js/map.js"></script>
+
+</html>

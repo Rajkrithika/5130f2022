@@ -1,0 +1,49 @@
+body {
+  background: #FFCC99;
+  background-size: cover;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  background-image: url(../img/background.jpg);
+}
+
+.flex-child {
+  flex: 1;
+}
+
+.flex-child:first-child {
+  margin-right: 20px;
+}
+
+
+.left-side {
+  position: fixed;
+  /* height: auto; */
+  width: 50%;
+}
+
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation:
+  typing 1s steps(20, end) forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.center-carousel {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  margin-top: 10px;
+}
