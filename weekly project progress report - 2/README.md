@@ -1,4 +1,4 @@
-WEEKLY PROJECT PROGRESS REPORT - 2.docx
+
                         WEEKLY PROJECT PROGRESS REPORT - 2  
 
 
@@ -28,7 +28,7 @@ In future report :
 Planning to connect all the menus listed in the dashboard to their corresponding pages and make it functional ( example : Add homework )   
 
 
-My partner has created a complete Database for login and signup as of now and in future she will be creating the database for all the pages and helping with designing like font,images or any creative ideas furthermore,  we both planned to work together and do both the process . 
+My partner has created a complete Database for login and signup ( functional now ) and in future she will be creating the database for all the pages and helping with designing like font,images or any creative ideas furthermore,  we both planned to work together and do both the process . 
 
 
 
